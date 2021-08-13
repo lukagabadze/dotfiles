@@ -1,0 +1,18 @@
+{
+  "suggest.noselect": false,
+  "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "typescript.tsx",
+    "graphql",
+    "css",
+    "scss"
+  ],
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/docker/compose/master/compose/config/config_schema_v2.0.json": "**/docker-compose*.yml"
+  }
+}
