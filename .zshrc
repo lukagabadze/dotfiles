@@ -3,7 +3,9 @@
 
 # colors and prompt text
 autoload -U colors && colors
-PS1="%B%{$fg[green]%}[%{$fg[yellow]%}%n%{$fg[yellow]%}@%{$fg[yellow]%}manjaro %{$fg[white]%}%~%{$fg[green]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[green]%}[%{$fg[yellow]%}%n%{$fg[yellow]%}@%{$fg[yellow]%}%m%{$fg[white]%}%~%{$fg[green]%}]%{$reset_color%}$%b "
+
+export PATH="$PATH:/home/gabo/scripts:/snap/bin:/usr/sbin"
 
 # history in cache
 HISTSIZE=10000
@@ -60,6 +62,10 @@ alias chp="chpower"
 
 alias dimg="docker images"
 alias dcon="docker container ls"
+
+alias gitpass="xclip -selection c ~/work/gitpass"
+
+alias s="cd ~/scripts && ls"
 
 
 
