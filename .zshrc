@@ -64,6 +64,7 @@ alias dimg="docker images"
 alias dcon="docker container ls"
 
 alias gitpass="xclip -selection c ~/work/gitpass"
+alias g="git status"
 
 alias s="cd ~/scripts && ls"
 
