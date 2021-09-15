@@ -56,6 +56,7 @@ alias grep="grep --color=always"
 alias zrc="nvim ~/.config/zsh/.zshrc"
 alias nrc="nvim ~/.config/nvim/init.vim"
 alias crc="nvim ~/.config/nvim/coc-settings.json"
+alias rrc="nvim ~/.config/ranger/rc.conf"
 
 alias shnow="shutdown now"
 alias sp="sudo power"

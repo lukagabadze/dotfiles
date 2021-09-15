@@ -21,7 +21,8 @@ call plug#end()
 set tabstop=2
 set shiftwidth=2
 set clipboard=unnamedplus
-:set number relativenumber
+set autoread
+set number relativenumber
 nnoremap j gj
 nnoremap k gk
 nnoremap <M-1> :tabn 1<CR>
