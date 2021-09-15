@@ -52,6 +52,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 
 # alias
 alias ls="ls  --color=auto"
+alias grep="grep --color=always"
 alias zrc="nvim ~/.config/zsh/.zshrc"
 alias nrc="nvim ~/.config/nvim/init.vim"
 alias crc="nvim ~/.config/nvim/coc-settings.json"
