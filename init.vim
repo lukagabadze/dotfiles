@@ -15,10 +15,6 @@ Plug 'tpope/vim-haml'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx'] }
 Plug 'ekalinin/Dockerfile.vim'
 
-Plug 'xolox/vim-session'
-Plug 'xolox/vim-misc'
-
-
 call plug#end()
 
 " general
@@ -68,11 +64,6 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-
-let g:session_directory="~/.local/nvim"
-let g:session_autoload = 'yes'
-let g:session_autosave = 'yes'
-autocmd VimLeave :SaveSession
 
 
 " automatic NERDTree mirroring on tab switching

@@ -65,6 +65,8 @@ alias dcon="docker container ls"
 
 alias gitpass="xclip -selection c ~/work/gitpass"
 alias g="git status"
+alias gc="git commit -m"
+alias gp="git push"
 
 alias s="cd ~/scripts && ls"
 
