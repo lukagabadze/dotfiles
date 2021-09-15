@@ -62,8 +62,10 @@ alias shnow="shutdown now"
 alias sp="sudo power"
 alias chp="chpower"
 
-alias dimg="docker images"
-alias dcon="docker container ls"
+alias dimg="docker image"
+alias dcon="docker container"
+alias dm="docker images"
+alias dc="docker container ls"
 
 alias gitpass="xclip -selection c ~/work/gitpass"
 alias g="git status"

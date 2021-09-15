@@ -12,6 +12,7 @@
     "css",
     "scss"
   ],
+  "docker.enable": true,
   "yaml.schemas": {
     "https://raw.githubusercontent.com/docker/compose/master/compose/config/config_schema_v2.0.json": "**/docker-compose*.yml"
   }
