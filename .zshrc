@@ -66,6 +66,8 @@ alias dimg="docker image"
 alias dcon="docker container"
 alias dm="docker images"
 alias dc="docker container ls"
+alias dup="docker-compose up"
+alias ddown="docker-compose down"
 
 alias gitpass="xclip -selection c ~/work/gitpass"
 alias g="git status"
