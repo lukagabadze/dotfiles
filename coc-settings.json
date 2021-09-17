@@ -10,7 +10,9 @@
     "typescript.tsx",
     "graphql",
     "css",
-    "scss"
+    "scss",
+    "html",
+    "css"
   ],
   "docker.enable": true,
   "yaml.schemas": {
