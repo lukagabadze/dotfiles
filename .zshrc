@@ -64,8 +64,9 @@ alias chp="chpower"
 
 alias dimg="docker image"
 alias dcon="docker container"
-alias dm="docker images"
-alias dc="docker container ls"
+alias dml="docker images"
+alias dcl="docker container ls"
+alias dc="docker-compose"
 alias dup="docker-compose up"
 alias ddown="docker-compose down"
 
