@@ -76,6 +76,8 @@ alias gc="git commit -m"
 alias gp="git push"
 
 alias s="cd ~/scripts && ls"
+alias so="open-script"
+alias y="ytfzf"
 
 
 
