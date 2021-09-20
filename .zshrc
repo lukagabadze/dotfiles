@@ -58,6 +58,7 @@ alias nrc="nvim ~/.config/nvim/init.vim"
 alias crc="nvim ~/.config/nvim/coc-settings.json"
 alias rrc="nvim ~/.config/ranger/rc.conf"
 
+
 alias shnow="shutdown now"
 alias sp="sudo power"
 alias chp="chpower"
@@ -78,11 +79,6 @@ alias gp="git push"
 alias s="cd ~/scripts && ls"
 alias so="open-script"
 alias y="ytfzf"
-
-
-
-
-
 
 
 # plugins
