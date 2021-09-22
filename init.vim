@@ -52,6 +52,7 @@ let g:coc_global_extensions = [
     \ 'coc-css',
 		\ 'coc-docker',
 		\ 'coc-yaml',
+		\ 'coc-go',
     \ ]
 
 inoremap <silent><expr> <c-space> coc#refresh()
