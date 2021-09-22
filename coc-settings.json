@@ -9,11 +9,11 @@
     "json",
     "typescript.tsx",
     "javascript.jsx",
-    "graphql",
     "css",
     "scss",
     "html",
-    "css"
+    "css",
+    "go"
   ],
   "docker.enable": true,
   "yaml.schemas": {
