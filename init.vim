@@ -14,6 +14,9 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-haml'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx'] }
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+Plug 'mlaursen/vim-react-snippets'
 
 call plug#end()
 
@@ -25,6 +28,8 @@ set autoread
 set number relativenumber
 nnoremap j gj
 nnoremap k gk
+noremap <C-j> j
+noremap <C-k> k
 nnoremap <M-1> :tabn 1<CR>
 nnoremap <M-2> :tabn 2<CR>
 nnoremap <M-3> :tabn 3<CR>
@@ -52,7 +57,7 @@ let g:coc_global_extensions = [
     \ 'coc-css',
 		\ 'coc-docker',
 		\ 'coc-yaml',
-		\ 'coc-go',
+		\ 'coc-tailwindcss',
     \ ]
 
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -95,7 +100,7 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 " nerdcommenter config
-noremap <C-_> :help<CR>
+" noremap <C-_> :help<CR>
 
 
 " close tag config
