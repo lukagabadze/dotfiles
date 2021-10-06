@@ -82,6 +82,8 @@ alias y="ytfzf"
 
 alias gowin="env GOOS=windows GOARCH=386"
 
+alias gcloud="/usr/bin/gcloud"
+
 
 # plugins
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
