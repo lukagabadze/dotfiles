@@ -58,10 +58,11 @@ alias nrc="nvim ~/.config/nvim/init.vim"
 alias crc="nvim ~/.config/nvim/coc-settings.json"
 alias rrc="nvim ~/.config/ranger/rc.conf"
 
-
 alias shnow="shutdown now"
 alias sp="sudo power"
 alias chp="chpower"
+
+alias grepnode="grep --exclude-dir=node_modules" 
 
 alias dimg="docker image"
 alias dcon="docker container"
@@ -83,6 +84,10 @@ alias y="ytfzf"
 alias gowin="env GOOS=windows GOARCH=386"
 
 alias gcloud="/usr/bin/gcloud"
+
+alias unipass="xclip -selection c ~/uni/unipass"
+
+
 
 
 # plugins
