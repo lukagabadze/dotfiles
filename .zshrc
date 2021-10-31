@@ -88,6 +88,8 @@ alias gcloud="/usr/bin/gcloud"
 alias unipass="xclip -selection c ~/uni/unipass"
 
 
+alias rape="pactl set-sink-input-volume" # ear rape
+
 
 
 # plugins
