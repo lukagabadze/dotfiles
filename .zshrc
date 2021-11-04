@@ -6,11 +6,13 @@ autoload -U colors && colors
 PS1="%B%{$fg[green]%}[%{$fg[yellow]%}%n%{$fg[yellow]%}@%{$fg[yellow]%}%m%{$fg[white]%}%~%{$fg[green]%}]%{$reset_color%}$%b "
 
 export PATH="$PATH:/home/gabo/scripts:/snap/bin:/usr/sbin"
+export PATH="$(yarn global bin):$PATH"
 
 # history in cache
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
+export LESSHISTFILE=-
 
 # better tabs
 autoload -U compinit
