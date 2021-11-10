@@ -37,6 +37,8 @@ nnoremap <M-4> :tabn 4<CR>
 nnoremap <M-5> :tabn 5<CR>
 nnoremap <M-6> :tabn 6<CR>
 nnoremap <M-7> :tabn 7<CR>
+nnoremap <M-8> :tabn 8<CR>
+nnoremap <M-9> :tabn 9<CR>
 if v:version >= 700
   au BufLeave * let b:winview = winsaveview()  " saves cursor pos
   au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif " restores cursor pos
