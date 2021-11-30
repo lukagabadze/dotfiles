@@ -1,7 +1,14 @@
 call plug#begin()
 
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'drewtempelmeyer/palenight.vim'
+
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
@@ -17,6 +24,9 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'mlaursen/vim-react-snippets'
+
+Plug 'sheerun/vim-polyglot' " syntax highlighting
+Plug 'jiangmiao/auto-pairs' " pairs without using coc
 
 call plug#end()
 
@@ -46,12 +56,12 @@ endif
 
 " colors
 :colorscheme gruvbox
+":colorscheme palenight
 let g:airline_theme='gruvbox'
 
 " coc config
 let g:coc_global_extensions = [
     \ 'coc-snippets',
-    \ 'coc-pairs',
     \ 'coc-tsserver',
     \ 'coc-eslint',
     \ 'coc-prettier',
@@ -60,8 +70,12 @@ let g:coc_global_extensions = [
 		\ 'coc-docker',
 		\ 'coc-yaml',
 		\ 'coc-tailwindcss',
-		\ 'coc-java',
-    \ ]
+		\ 'coc-git',
+		\ 'coc-pyright',
+		\ 'coc-jedi']
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gv :vsp<CR><Plug>(coc-definition)<C-W>L
 
 inoremap <silent><expr> <c-space> coc#refresh()
 " coc sass

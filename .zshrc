@@ -19,6 +19,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
+#compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots)  #includes hidden files
 
 
@@ -53,7 +54,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 
 # alias
-alias ls="ls  --color=auto"
+alias ls="ls -F --color=auto"
 alias grep="grep --color=always"
 alias zrc="nvim ~/.config/zsh/.zshrc"
 alias nrc="nvim ~/.config/nvim/init.vim"
