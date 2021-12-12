@@ -1,9 +1,10 @@
 # flexing on...  fuck
 #neofetch
+#pfetch
 
 # colors and prompt text
 autoload -U colors && colors
-PS1="%B%{$fg[green]%}[%{$fg[yellow]%}%n%{$fg[yellow]%}@%{$fg[yellow]%}%m%{$fg[white]%}%~%{$fg[green]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[green]%}[%{$fg[yellow]%}%n%{$fg[yellow]%}@%{$fg[yellow]%}%m%{$fg[white]%}🐧%~%{$fg[green]%}]%{$reset_color%}$%b "
 
 export PATH="$PATH:/home/gabo/scripts:/snap/bin:/usr/sbin"
 export PATH="$PATH:/usr/local/bin/.yarn/bin"
@@ -79,18 +80,18 @@ alias g="git status"
 alias gc="git commit -m"
 alias gp="git push"
 
+alias unipass="xclip -selection c ~/docs/uni/unipass"
+
 alias s="cd ~/scripts && ls"
 alias so="open-script"
 alias y="ytfzf"
 
 alias gowin="env GOOS=windows GOARCH=386"
-
 alias gcloud="/usr/bin/gcloud"
-
-alias unipass="xclip -selection c ~/uni/unipass"
-
-
 alias rape="pactl set-sink-input-volume" # ear rape
+alias node16="source /usr/share/nvm/init-nvm.sh && nvm use v16.13.0"
+
+alias u="echo hAm6pcU99qv7Dq8C | xclip -sel c"
 
 
 

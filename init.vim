@@ -13,10 +13,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'ryanoasis/vim-devicons'
+"Plug 'ryanoasis/vim-devicons'
+
 Plug 'kien/ctrlp.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'airblade/vim-gitgutter'
+
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-haml'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx'] }
@@ -36,6 +38,7 @@ set shiftwidth=2
 set clipboard=unnamedplus
 set autoread
 set number relativenumber
+set encoding=UTF-8
 nnoremap j gj
 nnoremap k gk
 noremap <C-j> j
@@ -107,6 +110,7 @@ endfunction
 autocmd TabEnter * silent exe MirrorNerdTreeIfOneWindow()
 
 
+let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
 
 
 " ctrl p config
