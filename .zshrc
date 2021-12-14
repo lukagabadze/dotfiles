@@ -82,7 +82,7 @@ alias gp="git push"
 
 alias unipass="xclip -selection c ~/docs/uni/unipass"
 
-alias s="cd ~/scripts && ls"
+alias s="cd ~/.scripts && ls"
 alias so="open-script"
 alias y="ytfzf"
 
@@ -91,7 +91,7 @@ alias gcloud="/usr/bin/gcloud"
 alias rape="pactl set-sink-input-volume" # ear rape
 alias node16="source /usr/share/nvm/init-nvm.sh && nvm use v16.13.0"
 
-alias u="echo hAm6pcU99qv7Dq8C | xclip -sel c"
+alias u="echo oops | xclip -sel c"
 
 
 
