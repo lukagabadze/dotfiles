@@ -1,0 +1,5 @@
+#info
+j		next-line
+k		prev-line
+^n	down-line
+^p	up-line
