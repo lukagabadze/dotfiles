@@ -16,7 +16,9 @@ compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots)  #includes hidden files
 
 # source aliases
-source $ALIASES
+for i in $(ls $ALIASES_HOME); do
+  source $ALIASES_HOME/$i
+done
 
 # keybindings
 bindkey -e
