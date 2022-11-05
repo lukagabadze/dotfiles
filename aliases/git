@@ -1,0 +1,5 @@
+alias gitpass="xclip -selection c ~/work/gitpass"
+alias g="git status"
+alias gc="git commit"
+alias gps="git push"
+alias gpl="git pull"
