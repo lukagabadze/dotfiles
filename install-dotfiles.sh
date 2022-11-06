@@ -1,7 +1,7 @@
 #/bin/bash
 
 # This script installs all configs in this directory,
-# by using on environment variables set in zsh/.zprofile
+# by using environment variables set in zsh/.zprofile
 
 source zsh/.zprofile
 
