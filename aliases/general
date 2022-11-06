@@ -1,8 +1,8 @@
 alias ls="ls -F --color=auto"
 alias grep="grep --color=always"
-alias info="info --init-file=$XDG_CONFIG_HOME/info/infokey"
+alias info="info --init-file=$INFOKEY"
 alias shnow="shutdown now"
-alias ss="cd $SCRIPTS && ls"
+alias ss="cd $SCRIPTS_HOME && ls"
 alias so="open-script"
 alias rape="pactl set-sink-input-volume" # ear rape
 alias virt-manager="SPICE_NOGRAB=1 virt-manager"
