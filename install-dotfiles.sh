@@ -42,9 +42,4 @@ cp info/infokey $INFOKEY
 # nvim (multiple choice)
 echo "\nnvim"
 mkdir -p $XDG_CONFIG_HOME/nvim
-PS3='Choose preferred config setup: '
-options=($(ls nvim))
-select config in "${options[@]}"; do
-  cp nvim/$config/* $NVIM_HOME
-  exit
-done
+cp nvim/$NVIM_MODE/* $NVIM_HOME
