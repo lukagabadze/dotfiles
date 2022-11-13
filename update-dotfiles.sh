@@ -38,4 +38,4 @@ cp $INFOKEY info/infokey
 
 # nvim
 echo "\nnvim"
-cp $NVIM_HOME/* nvim/$NVIM_MODE
+cp -Tr $NVIM_HOME nvim
