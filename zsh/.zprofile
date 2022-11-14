@@ -29,7 +29,6 @@ export EDITOR="nvim"
 export USER_COLOR="yellow"
 export PATH="$PATH:$SCRIPTS_HOME:/usr/sbin"
 export WM="dwm"
-export NVIM_MODE="basic"
 
 
 # /===============\

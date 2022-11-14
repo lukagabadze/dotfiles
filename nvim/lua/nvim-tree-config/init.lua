@@ -12,6 +12,8 @@ require("nvim-tree").setup({
     mappings = {
       list = {
         { key = "u", action = "dir_up" },
+        { key = "t", action = "tabnew"},
+        { key = "<C-t>", action = ""},
       },
     },
   },
