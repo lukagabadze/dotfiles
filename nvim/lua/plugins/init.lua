@@ -49,4 +49,15 @@ return require('packer').startup(function()
 	-- auto tag --
 	use 'alvan/vim-closetag'
 
+	-- git signs --
+	use {
+		'lewis6991/gitsigns.nvim',
+		config = function()
+			require('gitsigns').setup()
+		end
+	}
+
+	-- nvim tree --
+	use 'nvim-tree/nvim-tree.lua'
+
 end)

@@ -6,3 +6,6 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 vim.keymap.set('n', 'gp', ":silent %!prettier --stdin-filepath %<CR>", {})
+
+vim.keymap.set('n', '<C-f>', "<cmd>NvimTreeFindFile<CR>", {})
+vim.keymap.set('n', '<leader>t', "<cmd>NvimTreeToggle<CR>", {})
