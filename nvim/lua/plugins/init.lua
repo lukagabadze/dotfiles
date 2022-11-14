@@ -20,11 +20,12 @@ return require('packer').startup(function()
 	-- syntax highlighting--
 	use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
-	-- telescope
+	-- telescope with plugins: tabs
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+	use 'LukasPietzschmann/telescope-tabs'
 
 	-- auto completion --
 	use 'neovim/nvim-lspconfig'
