@@ -1,5 +1,4 @@
 local null_ls = require("null-ls")
-local formatting = null_ls.builtins.formatting
 
 local async_formatting = function(bufnr)
 	bufnr = bufnr or vim.api.nvim_get_current_buf()
@@ -36,9 +35,29 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		null_ls.builtins.formatting.stylua,
-		null_ls.builtins.diagnostics.eslint,
-		formatting.prettier,
-		solhint,
+		null_ls.builtins.formatting.prettier.with({
+			filetypes = {
+				"javascript",
+				"javascriptreact",
+				"typescript",
+				"typescriptreact",
+				"vue",
+				"css",
+				"scss",
+				"less",
+				"html",
+				"json",
+				"jsonc",
+				"yaml",
+				"markdown",
+				"markdown.mdx",
+				"graphql",
+				"handlebars",
+				"solidity",
+			},
+		}),
+		null_ls.builtins.code_actions.eslint_d,
+		null_ls.builtins.diagnostics.solhint,
 	},
 	on_attach = function(client, bufnr)
 		if client.supports_method("textDocument/formatting") then
