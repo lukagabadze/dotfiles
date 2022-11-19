@@ -29,17 +29,20 @@ return require('packer').startup(function()
 
 	-- auto completion --
 	use 'neovim/nvim-lspconfig'
+	use 'williamboman/nvim-lsp-installer'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/cmp-path'
 	use 'hrsh7th/cmp-cmdline'
 	use 'hrsh7th/nvim-cmp'
 
+	-- formatter --
+	use 'jose-elias-alvarez/null-ls.nvim'
+	-- use 'MunifTanjim/prettier.nvim'
+
+
 	-- which-key --
 	use 'folke/which-key.nvim'
-
-	-- formatter --
-	use 'lukas-reineke/lsp-format.nvim'
 
 	-- auto pairs --
 	use {

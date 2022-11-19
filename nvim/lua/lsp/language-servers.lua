@@ -4,8 +4,6 @@ local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
-	print('hello')
-
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
   local bufopts = { noremap=true, silent=true, buffer=bufnr }
@@ -43,4 +41,8 @@ require('lspconfig')['tsserver'].setup{
 require('lspconfig')['solidity'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+		settings = {
+			-- example of global remapping
+			solidity = { includePath = '', remapping = { ["@OpenZeppelin/"] = 'OpenZeppelin/openzeppelin-contracts@4.6.0/' } }
+		},
 }
