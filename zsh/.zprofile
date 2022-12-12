@@ -29,11 +29,3 @@ export EDITOR="nvim"
 export USER_COLOR="yellow"
 export PATH="$PATH:/usr/sbin:$SCRIPTS_HOME:$XDG_DATA_HOME/bin"
 export WM="dwm"
-
-
-# /===============\
-# |Startx on Login|
-# \===============/
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec startx
-fi
