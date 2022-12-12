@@ -42,4 +42,4 @@ cp info/infokey $INFOKEY
 # nvim (multiple choice)
 echo "\nnvim"
 mkdir -p $XDG_CONFIG_HOME/nvim
-cp nvim/$NVIM_MODE/* $NVIM_HOME
+cp -Tr nvim $NVIM_HOME

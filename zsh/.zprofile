@@ -27,14 +27,5 @@ export WALLPAPER="$HOME/.config/wallpaper"
 # \=======/
 export EDITOR="nvim"
 export USER_COLOR="yellow"
-export PATH="$PATH:$SCRIPTS_HOME:/usr/sbin"
+export PATH="$PATH:/usr/sbin:$SCRIPTS_HOME:$XDG_DATA_HOME/bin"
 export WM="dwm"
-export NVIM_MODE="basic"
-
-
-# /===============\
-# |Startx on Login|
-# \===============/
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec startx
-fi
