@@ -17,7 +17,6 @@ export ZSHENV="$HOME/.zshenv"
 export XINITRC="$HOME/.xinitrc"
 export INFOKEY="$XDG_CONFIG_HOME/info/infokey"
 export TMUXCONF="$XDG_CONFIG_HOME/tmux/tmux.conf"
-
 export STARTUP_SCRIPT="$SCRIPTS_HOME/startup"
 export WALLPAPER="$HOME/.config/wallpaper"
 
@@ -29,3 +28,10 @@ export EDITOR="nvim"
 export USER_COLOR="yellow"
 export PATH="$PATH:/usr/sbin:$SCRIPTS_HOME:$XDG_DATA_HOME/bin"
 export WM="dwm"
+
+# /===============\
+# |Startx on Login|
+# \===============/
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi
