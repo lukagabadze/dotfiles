@@ -1,0 +1,2 @@
+alias node16="source /usr/share/nvm/init-nvm.sh && nvm use 16.0"
+alias node18="source /usr/share/nvm/init-nvm.sh && nvm use 18.10"
