@@ -50,3 +50,7 @@ require('lspconfig')['pyright'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
+require('lspconfig')['angularls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
