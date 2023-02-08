@@ -6,21 +6,16 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  view = {
-    adaptive_size = true,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-        { key = "t", action = "tabnew"},
-        { key = "<C-t>", action = ""},
-      },
+    sort_by = "case_sensitive",
+    view = {
+        adaptive_size = true,
+        mappings = {
+            list = {
+                {key = "u", action = "dir_up"}, {key = "t", action = "tabnew"},
+                {key = "<C-t>", action = ""}
+            }
+        }
     },
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
+    renderer = {group_empty = true},
+    filters = {dotfiles = true}
 })
