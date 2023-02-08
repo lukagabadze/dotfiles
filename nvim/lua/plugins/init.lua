@@ -63,4 +63,7 @@ return require("packer").startup(function()
 
 	-- nvim tree --
 	use("nvim-tree/nvim-tree.lua")
+
+	-- comments --
+	use("terrortylor/nvim-comment")
 end)
