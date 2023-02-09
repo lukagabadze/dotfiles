@@ -20,7 +20,6 @@ return require("packer").startup(function()
     -- syntax highlighting--
     use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
     use("windwp/nvim-ts-autotag")
-    use("nvim-treesitter/nvim-treesitter-angular")
 
     -- telescope with plugins: tabs
     use({
