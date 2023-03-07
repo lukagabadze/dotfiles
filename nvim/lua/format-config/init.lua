@@ -32,12 +32,19 @@ null_ls.setup({
     debug = false,
     sources = {
         null_ls.builtins.formatting.lua_format,
-        null_ls.builtins.formatting.prettier.with({
+        null_ls.builtins.formatting.eslint_d.with({
             filetypes = {
                 "javascript", "javascriptreact", "typescript",
-                "typescriptreact", "vue", "css", "scss", "less", "html", "json",
-                "jsonc", "yaml", "markdown", "markdown.mdx", "graphql",
-                "handlebars", "solidity"
+                "typescriptreact", "vue"
+            }
+        }), null_ls.builtins.formatting.prettier.with({
+            filetypes = {
+                "css", "scss", "less", "html", "json", "jsonc", "yaml",
+                "markdown", "markdown.mdx", "graphql", "handlebars", "solidity"
+            },
+            args = {
+                "--fix-to-stdout", "--stdin", "--stdin-filename",
+                "/home/gabo/.config/eslint.config.json"
             }
         }), null_ls.builtins.code_actions.eslint_d,
         null_ls.builtins.diagnostics.solhint, null_ls.builtins.formatting.black
