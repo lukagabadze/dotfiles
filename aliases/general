@@ -10,3 +10,6 @@ alias tmux="tmux -u"
 
 
 alias virsh="virsh -c qemu:///system"
+
+
+alias ultimateshred="find ../some-folder -type f -exec sudo shred -uvz {} \;"
