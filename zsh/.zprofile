@@ -26,7 +26,7 @@ export WALLPAPER="$HOME/.config/wallpaper"
 # \=======/
 export EDITOR="nvim"
 export USER_COLOR="yellow"
-export PATH="$PATH:/usr/sbin:$SCRIPTS_HOME:$XDG_DATA_HOME/bin"
+export PATH="$PATH:/usr/sbin:$SCRIPTS_HOME:$XDG_DATA_HOME/bin:$HOME/.local/bin"
 export WM="dwm"
 
 # /===============\
